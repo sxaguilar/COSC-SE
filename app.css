@@ -1,0 +1,82 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul {
+    margin: 1;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f50000;
+    margin: 1;
+    padding: 0;
+}
+
+header {
+    background-color: #5c7ca7;
+    color: #00fc93;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header a {
+    color: #b66b6b;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #093f09;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin: 20px 0;
+}
+
+section h2 {
+    font-size: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #f0a8a8;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Task list styling (customize as needed) */
+ul.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+li.task {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Messaging interface styling (customize as needed) */
+ul.messages {
+    list-style: none;
+    padding: 0;
+}
+
+li.message {
+    background-color: #d6e0f0;
+    border: 1px solid #8aade0;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
