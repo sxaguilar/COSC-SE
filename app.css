@@ -114,3 +114,12 @@ li.message {
 .horizontal-menu li:last-child {
     margin-right: 0; /* Remove the margin from the last item */
 }
+.horizontal-menu a {
+    color: #06216b79; /* Change link text color to orange (#FF5733) */
+    font-family: "Arial", sans-serif; /* Change font family to Arial or a preferred font */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.horizontal-menu a:hover {
+    color: #5b0c888f; /* Change link color on hover */
+}
