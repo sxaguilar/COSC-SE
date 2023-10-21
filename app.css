@@ -79,3 +79,23 @@ li.message {
     padding: 10px;
     border-radius: 5px;
 }
+
+.login-container {
+    /* Your styles for the login container */
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.login-container h1 {
+    /* Styles for the login header */
+    color: #333;
+}
+
+.login-container form {
+    /* Styles for the login form */
+    background-color: #fff;
+    padding: 10px;
+}
+
+/* Add more styles as needed */
