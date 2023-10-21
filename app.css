@@ -82,8 +82,8 @@ li.message {
 
 .login-container {
     /* Your styles for the login container */
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
+    background-color: #5be6eb;
+    border: 1px solid #8aade0;
     padding: 20px;
 }
 
@@ -99,3 +99,18 @@ li.message {
 }
 
 /* Add more styles as needed */
+
+.horizontal-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.horizontal-menu li {
+    display: inline; /* Make list items display horizontally */
+    margin-right: 20px; /* Add spacing between the items */
+}
+
+.horizontal-menu li:last-child {
+    margin-right: 0; /* Remove the margin from the last item */
+}
