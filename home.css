@@ -1,4 +1,4 @@
-/* Reset some default browser styles */
+
 body, h1, h2, p, ul {
     margin: 1;
     padding: 0;
@@ -51,6 +51,7 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
 .horizontal-menu {
     list-style: none;
     padding: 0;

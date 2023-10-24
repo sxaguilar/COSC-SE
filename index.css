@@ -1,4 +1,3 @@
-/* Reset some default browser styles */
 body, h1, h2, p, ul {
     margin: 1;
     padding: 0;
@@ -51,6 +50,7 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
 .horizontal-menu {
     list-style: none;
     padding: 0;
@@ -73,4 +73,31 @@ footer {
 
 .horizontal-menu a:hover {
     color: #5b0c888f; /* Change link color on hover */
+}
+/* Task list styling (customize as needed) */
+ul.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+li.task {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Messaging interface styling (customize as needed) */
+ul.messages {
+    list-style: none;
+    padding: 0;
+}
+
+li.message {
+    background-color: #d6e0f0;
+    border: 1px solid #8aade0;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
 }
