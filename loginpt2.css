@@ -1,6 +1,7 @@
 
 body, html{
     height: 100%;
+    text-decoration: none !important;
 }
 *{
     box-sizing: border-box;
@@ -12,13 +13,13 @@ body, html{
     border-width: 1px;
     border-color: rgba(0, 0, 0, 0);
     border-style: groove;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 20px;
     background-color: white;
     
-   
-    width: 33.3%;
-    height: 500px;
+    text-decoration: none !important
+    width: 30%;
+    height: 520px;
     margin: 20px;
     margin-top: 40px;
 }
@@ -33,11 +34,12 @@ body, html{
 
 .form{
     position: center;
-    right: 0;
-    margin: 20px;
+    left: 20px;
+    margin: 0px;
     max-width: 300px;
     padding: 16px;
     background-color: white;
+    text-decoration: none !important
 }
 input[type=text], input[type=password]{
     width: 100%;
@@ -58,7 +60,19 @@ input[type=text]:focus, input[type=password]:focus{
     cursor: pointer;
     width: 100%;
     opacity: 0.5;
+    text-decoration: none !important;
 }
 .button:hover{
     opacity: 1;
+}
+#line{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin: 20px;
+    margin-left: 0;
+    margin-right: 0;
+}
+#p{
+    /*put it in the center*/
 }
