@@ -94,10 +94,19 @@ footer {
 }
 
 .login-container {
+   
     display: flex;
-    justify-content: center; /* Center horizontally */
+    float: right;
+    justify-content: right; /* Center horizontally */
     align-items: center; /* Center vertically */
-    height: 100vh;
+    height: auto;
+}
+.image {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+
+   
 }
 
 .login-box {

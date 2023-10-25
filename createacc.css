@@ -1,51 +1,24 @@
-body{
-    background: #8190d6;
+
+body {
+    background-image: url('projectimages/pexels-miguel-á-padriñán-19670.jpg'); /* Replace 'your-image.jpg' with the actual image file name and path */
+    background-size: cover; /* Adjusts the image size to cover the entire viewport */
+    background-repeat: no-repeat; /* Prevents the image from repeating */  
     text-align: center;
     font-family:"Lucinda Console", 'Courier New', Courier, monospace;
 }
 form{
-    padding: 20px;
+    padding: 20px; 
     background-color: #fff; /* Background color for the login box */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
     text-align: center;
     font-family:"Lucinda Console", 'Courier New', Courier, monospace;
+    margin-top: 20px;
+    scroll-margin-left: 20%;
+    margin-right: 20%;
 }
 
 p{
     font-size: 14px;
     text-align: center;
     font-style: normal;
-}
-
-/*change background color of the navigation bar*/
-.topnav {
-    overflow: hidden;
-    background-color: #06216b79;
-}
-/*style the links in the nav bar*/
-.topnav a{
-    float:left;
-    display: block;
-    color: black;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-/*change the color of the links while being hovered*/
-.topnav a:hover {
-    background-color: #5a0c882f;
-    color: white;
-}
-/*supposed to highlight the current page*/
-.topnav a.active{
-    background-color: aliceblue;
-    color: white;
-}
-/*search bar modi*/
-.topnav input[type=text]{
-    float: right;
-    padding: 6px;
-    border: none;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 17px;
 }
