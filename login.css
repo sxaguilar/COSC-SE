@@ -110,3 +110,13 @@ footer {
 .login-box h1 {
     margin-bottom: 20px;
 }
+#line{
+    width: auto;
+    height: 2px;
+    background-color: black;
+    margin: auto;
+}
+#button{
+    font-size: medium;
+    text-decoration: none;
+}

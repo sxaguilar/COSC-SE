@@ -50,29 +50,37 @@ footer {
     text-align: center;
     padding: 10px;
 }
-
-.horizontal-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/*change background color of the navigation bar*/
+.topnav {
+    overflow: hidden;
+    background-color: #06216b79;
 }
-
-.horizontal-menu li {
-    display: inline; /* Make list items display horizontally */
-    margin-right: 20px; /* Add spacing between the items */
+/*style the links in the nav bar*/
+.topnav a{
+    float:left;
+    display: block;
+    color: black;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-.horizontal-menu li:last-child {
-    margin-right: 0; /* Remove the margin from the last item */
+/*change the color of the links while being hovered*/
+.topnav a:hover {
+    background-color: #5a0c882f;
+    color: white;
 }
-.horizontal-menu a {
-    color: #06216b79; /* Change link text color to orange (#FF5733) */
-    font-family: "Arial", sans-serif; /* Change font family to Arial or a preferred font */
-    text-decoration: none; /* Remove underline from links */
+/*supposed to highlight the current page*/
+.topnav a.active{
+    background-color: aliceblue;
+    color: white;
 }
-
-.horizontal-menu a:hover {
-    color: #5b0c888f; /* Change link color on hover */
+/*search bar modi*/
+.topnav input[type=text]{
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
 }
 /* Task list styling (customize as needed) */
 ul.task-list {
