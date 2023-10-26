@@ -1,55 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>register</title>
+        <title>create account</title>
         <link rel="stylesheet" type="text/css" href="createacc.css">
         <link rel="shortcut icon" href="projectimages/Bimetrical_icon_clipboard_black.svg" type="image/icon"/>
 
     </head>
     <body>
-        <header>
-            <h1>Task Management</h1>
+        
+        <header class="header">
+            <h1>Ctrl-Alt-Task</h1>
         </header>
-        <form action="" method="post" id="form">
-            <h1> register</h1>
-            <h4> create your free account</h4>
-            <p>
-                <label>
-                    <span>email: </span>
-                    <input id="email" type="email" name "email" placeholder="enter your email address"> 
-                </label>
-            </p>
-            <p> 
-                <label>
-                    <span>password: </span>
-                    <input id="password" type="password" name="password"placeholder="enter your password">
-                </label>
-            </p>
-            <p>
-                <label> 
-                    <span> first name: </span>
-                    <input id="name" type="text"name "name" placeholder="enter first name"/>
-                </label>
-                </p>
-                <p>
-                <label> 
-                    <span> last name: </span>
-                    <input id="name" type="text"name "name" placeholder="enter last name"/>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input type="checkbox" checked name="Subscribe"/>
-                    <span> agree to <a href="termsandconditions.txt">Terms and Conditions</a></span>
-                </label>
-            </p>
-            <p>
-                <span>&nbsp;</span>
-                <input type="submit" value="send"/>
-            </p>
-            
+        <div class="image">
+        <div class="account"> 
+            <form action="" method="post" class="form">
+                <h1> register</h1>
+                <h4> create your free account</h4>
+                    <label for="email"><b>email</b></label>
+                    <input type="text" placeholder="enter email" name="email" required>
 
-        </form>
+                    <label for="password"><b>password</b></label>
+                    <input type="password" placeholder="enter password" name="psw" required>
+
+                    <label for="name"> <b>name</b></label>
+                    <input type="text" placeholder="enter first name" name="name" required>
+
+                    <label for="name"><b>last name</b></label>
+                    <input type="text" placeholder="enter last name" name=";name" required>
+                
+                    <button type="submit" class="button">create account</button>
+        
+            </form>
+        </div>
+        </div>
     </body>
 
 </html>

@@ -1,7 +1,6 @@
 
 body, html{
     height: 100%;
-    text-decoration: none !important;
 }
 *{
     box-sizing: border-box;
@@ -17,7 +16,6 @@ body, html{
     padding: 20px;
     background-color: white;
     
-    text-decoration: none !important
     width: 30%;
     height: 520px;
     margin: 20px;

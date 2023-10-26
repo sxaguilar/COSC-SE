@@ -1,17 +1,81 @@
-
-body {
-    background-image: url('projectimages/pexels-miguel-á-padriñán-19670.jpg'); /* Replace 'your-image.jpg' with the actual image file name and path */
-    background-size: cover; /* Adjusts the image size to cover the entire viewport */
-    background-repeat: no-repeat; /* Prevents the image from repeating */  
+body, html{
+    height: 100%;
+    background-color: #E8E8E8;
+    
+}
+*{
+    box-sizing: border-box;
+}
+.header {
     text-align: center;
-    font-family:"Lucinda Console", 'Courier New', Courier, monospace;
+    color: black;
+}
+.account{ 
+    position: absolute;
+    left: 35%;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0);
+    border-style: groove;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    
+    width: 30%;
+    height: 620px;
+    margin: 20px;
+}
+.image{
+    background-image: url(projectimages/planet.jpg);
+    height: 1111px;;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.form{
+    position: center;
+    margin: 0px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+    text-decoration: none !important;
+}
+input[type=text], input[type=password]{
+    width: 100%;
+    padding: 20px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus{
+    background-color: #ddd;
+    outline: none;
+}
+.button{
+    background-color: #77c071;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.5;
+    text-decoration: none !important;
+}
+.button:hover{
+    opacity: 1;
+}
+ /*
+body {
+    background-image: url('projectimages/planet.jpg'); Replace 'your-image.jpg' with the actual image file name and path 
+    background-size: cover; /* Adjusts the image size to cover the entire viewport 
+    background-repeat: no-repeat; /* Prevents the image from repeating   
+    text-align: center;
 }
 form{
     padding: 20px; 
-    background-color: #fff; /* Background color for the login box */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    background-color: #fff; /* Background color for the login box 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow for depth 
     text-align: center;
-    font-family:"Lucinda Console", 'Courier New', Courier, monospace;
     margin-top: 20px;
     scroll-margin-left: 20%;
     margin-right: 20%;
@@ -21,4 +85,4 @@ p{
     font-size: 14px;
     text-align: center;
     font-style: normal;
-}
+}*/ 
