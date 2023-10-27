@@ -9,24 +9,45 @@ body {
     background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
-header {
-    background-color: #5be6eb;
-    color: #200b1a;
-    text-align: center;
+
+.header {
     padding: 20px;
+    background-color: antiquewhite;
+}
+.logo {
+    height: 40px;
+    margin: 0;
+}
+#title {
+    text-align: center;
+    margin-top: 0;
+
 }
 
-header h1 {
-    font-size: 24px;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
-
-header a {
-    color: #d8d0d0;
+li {
+    float: left;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    margin: 0 10px;
-    font-size: 16px;
+    opacity: 0.5;
 }
-
+li a:hover {
+    opacity: 1;
+}
+.active {
+    background-color: #111;
+}
 main {
     max-width: 800px;
     margin: 20px auto;
@@ -50,29 +71,37 @@ footer {
     text-align: center;
     padding: 10px;
 }
-
-.horizontal-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/*change background color of the navigation bar*/
+.topnav {
+    overflow: hidden;
+    background-color: #06216b79;
 }
-
-.horizontal-menu li {
-    display: inline; /* Make list items display horizontally */
-    margin-right: 20px; /* Add spacing between the items */
+/*style the links in the nav bar*/
+.topnav a{
+    float:left;
+    display: block;
+    color: black;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-.horizontal-menu li:last-child {
-    margin-right: 0; /* Remove the margin from the last item */
+/*change the color of the links while being hovered*/
+.topnav a:hover {
+    background-color: #5a0c882f;
+    color: white;
 }
-.horizontal-menu a {
-    color: #06216b79; /* Change link text color to orange (#FF5733) */
-    font-family: "Arial", sans-serif; /* Change font family to Arial or a preferred font */
-    text-decoration: none; /* Remove underline from links */
+/*supposed to highlight the current page*/
+.topnav a.active{
+    background-color: aliceblue;
+    color: white;
 }
-
-.horizontal-menu a:hover {
-    color: #5b0c888f; /* Change link color on hover */
+/*search bar modi*/
+.topnav input[type=text]{
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
 }
 /* Task list styling (customize as needed) */
 ul.task-list {
@@ -100,4 +129,7 @@ li.message {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
+}
+#loginlink {
+    float: right;
 }
