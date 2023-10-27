@@ -6,9 +6,48 @@ body, html{
     box-sizing: border-box;
 }
 
+.header {
+    padding: 20px;
+    background-color: antiquewhite;
+}
+.logo {
+    height: 40px;
+    margin: 0;
+}
+#title {
+    text-align: center;
+    margin-top: 0;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    opacity: 0.5;
+}
+li a:hover {
+    opacity: 1;
+}
+.active {
+    background-color: #111;
+}
+
 .login{ 
     float: right;
-    position: fixed;
+    position: absolute;
     border-width: 1px;
     border-color: rgba(0, 0, 0, 0);
     border-style: groove;
@@ -73,4 +112,7 @@ input[type=text]:focus, input[type=password]:focus{
 }
 #p{
     /*put it in the center*/
+}
+#loginlink {
+    float: right;
 }
