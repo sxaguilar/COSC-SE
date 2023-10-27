@@ -4,15 +4,16 @@ body, h1, h2, p, ul {
 }
 
 body {
-    background-image: url('projectimages/pexels-miguel-á-padriñán-19670.jpg'); /* Replace 'your-image.jpg' with the actual image file name and path */
+    background-image: url('projectimages/rings.jpg'); /* Replace 'your-image.jpg' with the actual image file name and path */
     background-size: cover; /* Adjusts the image size to cover the entire viewport */
     background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 1008px;
 }
 
 
 .header {
     padding: 20px;
-    background-color: antiquewhite;
+    background-color: #D9D9D9;
 }
 .logo {
     height: 40px;
