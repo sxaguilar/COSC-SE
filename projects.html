@@ -24,13 +24,18 @@
                 <li id="loginlink"><a href="useracc.html">profile</a></li>
             </ul>
 
-    <main>
-        <section id="projects">
-            <h2>Welcome to the Task Management Website</h2>
-            <p>This is the projects page.</p>
-        </section>
-    </main>
+   
+    <div class="task-form">
+        <input type="text" id="task-title-input" placeholder="Enter task title...">
+        <p></p>
+        <input type="text" id="task-input" placeholder="Enter task description...">
+        <p></p>
+        <button onclick="createTask()">Create Project</button>
+        
+        <ul id="task-list"></ul>
+    </div>
 
+    <script src="app.js"></script>
     <footer>
         &copy; 2023 Control-Alt-Task
     </footer>

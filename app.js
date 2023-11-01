@@ -30,3 +30,32 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+function createTask() {
+    var taskInput = document.getElementById('task-input');
+    var taskTitleInput = document.getElementById('task-title-input');
+    
+    var taskText = taskInput.value.trim();
+    var taskTitle = taskTitleInput.value.trim();
+
+    if (taskText !== '' && taskTitle !== '') {
+        var taskList = document.getElementById('task-list');
+        var newTask = document.createElement('li');
+        newTask.textContent = `${taskTitle}: ${taskText}`;
+        
+        // Add event listener to mark task as completed when clicked
+        newTask.addEventListener('click', function() {
+            if (!newTask.classList.contains('completed')) {
+                newTask.classList.add('completed');
+            } else {
+                newTask.classList.remove('completed');
+            }
+        });
+        
+        taskList.appendChild(newTask);
+        taskInput.value = '';
+        taskTitleInput.value = '';
+    }
+}
+
+
+
