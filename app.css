@@ -310,3 +310,11 @@ footer {
         width: 100%;
     }
 }
+/*User Account*/
+.container {
+    border-radius: 20px;
+}
+.container img {
+    width: 100%;
+    margin-bottom: 5px;
+}
