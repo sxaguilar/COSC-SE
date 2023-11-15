@@ -130,19 +130,12 @@ input[type=radio], input[type=radio]{
     margin-right: 0;
 }
 .login{ 
-    float: right;
-    position: absolute;
-    border-width: 1px;
-    border-color: rgba(0, 0, 0, 0);
-    border-style: groove;
     border-radius: 10px;
-    padding: 20px;
+    margin-top: 5%;
+    margin-left: 65%;
+    max-width: 400px;;
+    padding: 40px;
     background-color: white;
-    
-    width: 30%;
-    height: 520px;
-    margin: 20px;
-    margin-top: 40px;
 }
 .logInForm{
     position: center;
