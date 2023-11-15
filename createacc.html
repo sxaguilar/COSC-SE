@@ -33,8 +33,11 @@
                     <label for="name"><b>last name</b></label>
                     <input type="text" placeholder="enter last name" name=";name" required>
 
+                    <label for="age"><b>age</b></label>
                     <input max="99" min="1" name="age" step="1" type="number" value="18"/><br />
 
+                    <label for="gender"><b>gender</b></label>
+                    <p></p>
                     <input name="gender" type="radio" value="male">male
                     <input checked="checked" name="gender" type="radio" value="female">female
                     <p></p>
@@ -42,8 +45,16 @@
                     <input type="email" placeholder="enter email" name="email" required>
 
                     <label for="password"><b>password</b></label>
-                    <input type="password" placeholder="enter password" name="psw" required>
-
+                    <input id="psw" type="password" placeholder="enter password" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                    <div class="messageBox">
+                                <div id="passValidMessage">
+                                    <h4>Password must contain the following:</h4>
+                                    <p id="letter" class="invalid">A <b> lowercase</b>letter</p>
+                                    <p id="capital" class="invalid">A <b>capital</b> letter</p>
+                                    <p id="number" class="invalid">A <b>number</b></p>
+                                    <p id="length" class="invalid"> Minimum of <b>8 characters</b></p>
+                                </div>
+                            </div>
                     
                     <input type="checkbox" checked name="Subscribe"><a href="termsandconditions.txt">terms and conditions</a></input>
                 <p></p>
@@ -51,9 +62,11 @@
         
             </form>
         </div>
+        
         <footer>
             &copy; 2023 Control-Alt-Task
         </footer>
+        <script src="app.js"></script>
     </body>
 
 </html>

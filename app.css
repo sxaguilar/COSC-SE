@@ -1,19 +1,19 @@
 
-body, html{
-    height: 100%;
+body{
+    height:1000px;
     background-color: #E8E8E8;
     font-family: Arial;
-    padding: 10px;
-    
+    padding: 0px;
+    min-height: 100%;
 }
 *{
     box-sizing: border-box;
 }
 
 header {
-    padding: 2px;
+    padding: 0px;
     background-color: #D9D9D9;
-    margin-top: 0;
+    margin: 0;
 }
 .logo {
     height: 40px;
@@ -46,6 +46,7 @@ li a{
     padding: 14px 16px;
     text-decoration: none;
     opacity: 0.5;
+    font-weight: bold;
 }
 li a:hover {
     background-color: #D9D9D9;
@@ -65,6 +66,9 @@ li a:hover {
 }
 #registerTitle {
     margin: 10px;
+    text-align: center;
+}
+.image h4 {
     text-align: center;
 }
 input[type=text], input[type=password]{
@@ -146,6 +150,52 @@ input[type=radio], input[type=radio]{
     background-color: white;
     text-decoration: none !important
 }
+#passValidMessage {
+    font-size: small;
+    display:contents;
+    background-color: blue;
+    color: #000;
+    margin-right: 20px;
+    padding: 20px;
+    margin-top: 10px;
+}
+#passValidMessage p {
+    padding: 5px 10px;
+    font-size: small;
+    margin: 0;
+}
+#passValidMessage h4{
+    margin: 0;
+}
+#passValidMessage:hover {
+    display: contents;
+}
+.valid {
+    color: green;
+}
+.valid:before{
+    position: relative;
+    
+    content: '\2611';
+}
+.invalid {
+    color: red;
+}
+.invalid:before{
+    position: relative;
+   
+    content: '\2612';
+}
+.messageBox {
+    background-color: white;
+    width: 300px;
+    float: right;
+    margin-top: 5px;
+    margin-right: 30px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
 /*project specifics*/
 
 .task-cards {
@@ -224,7 +274,8 @@ li.message {
     padding: 5%;
     border-radius: 5px;
     margin: 20px;
-    
+    background-color: #D9D9D9;
+    position: static;
 }
 
 
@@ -241,13 +292,10 @@ li.message {
 
 /*footer*/
 footer {
+    margin-top: 1000px;
     padding: 20px;
-    text-align: center;
-    margin-top: 20px;
     background-color: #333;
     color: #666161;
-    float: none;
-
 }
 /*responsive layout*/
 @media screen and (max-width: 800px) {
