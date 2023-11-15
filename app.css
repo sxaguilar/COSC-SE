@@ -219,6 +219,33 @@ input[type=radio], input[type=radio]{
 
 
 /* Task list styling (customize as needed) */
+#tasks {
+    float: left;
+    width: 300px;
+    background-color:#666161;
+    text-align: center; 
+    margin-top: 10px;
+    
+    border-radius: 10px;
+}
+#task-form {
+    width: 275px;
+    margin-left: 12px;
+}
+#message-form {
+    width: 275px;
+    margin-left: 12px;
+}
+#messages {
+    margin-left: 20px;
+    float: left;
+    width: 300px;
+    background-color: #666161;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 10px;
+   
+}
 ul.task-list {
     list-style: none;
     padding: 0;
@@ -236,6 +263,7 @@ li.task {
 ul.messages {
     list-style: none;
     padding: 0;
+    display: none;
 }
 
 li.message {

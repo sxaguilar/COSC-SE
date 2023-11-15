@@ -18,8 +18,8 @@
                 <li><a href="home.html">home</a></li>
                 <li><a href="projects.html">projects</a></li>
                 <li id="loginlink"><a href="loginpt2.html">log in</a></li>
-                <li><a href="index.html">my tasks</a></li>        
-                <li id="loginlink"><a href="#home">settings</a></li>
+                <li><a class="active" href="index.html">my tasks</a></li>        
+                <li id="loginlink"><a href="settings.html">settings</a></li>
                 <li id="loginlink"><a href="useracc.html">profile</a></li>
             </ul>
     </header>
@@ -32,20 +32,33 @@
             </ul>
             <form id="task-form">
                 <input type="text" id="task-input" placeholder="Add a new task">
+                
+                <input type="text" id="taskOwner" placeholder="Owner:" >
+                
+                <input type="text" id="taskReciever" placeholder="Reciever:" >
+                
+                
+                <textarea id="projDeets" name="taskDeets" placeholder="Add task details..." style="height: 200px;"></textarea>
                 <button type="submit">Add Task</button>
             </form>
         </section>
 
         <!-- Communication section -->
+
         <section id="messages">
-            <h2>Messages</h2>
+        <h2> messages</h2>
+              <form id="message-form">
+                <input type="text" id="message-reciver" placeholder="send to:" >
+                <textarea id="projDeets" name="messageBox" placeholder="Type a message..." style="height: 200px;"></textarea>
+                
+                <button type="submit">Send</button>
+           
+           
+            
             <ul class="messages">
                 <!-- Message list items will be added here dynamically -->
-            </ul>
-            <form id="message-form">
-                <input type="text" id="message-input" placeholder="Type a message">
-                <button type="submit">Send</button>
-            </form>
+            </ul> 
+        </form>
         </section>
     </main>
 
