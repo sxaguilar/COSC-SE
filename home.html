@@ -4,31 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Task Management</title>
-    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" type="text/css" href="app.css">
     <link rel="shortcut icon" href="projectimages/Bimetrical_icon_clipboard_black.svg" type="image/icon"/>
 </head>
-<body>
+<body class="home">
     
-    <div class="header">
+    <header>
         <img src="projectimages/Screenshot 2023-10-26 182953.png" crossorigin="anonymous" class="logo">
         <span id="title"><h1>Ctrl-Alt-Task</h1> </span>
 
-        </div>
+        
             <ul>
                 <li><a href="home.html">home</a></li>
                 <li><a href="projects.html">projects</a></li>
                 <li id="loginlink"><a href="loginpt2.html">log in</a></li>
-                <li><a href="index.html">my tasks</a></li>
-                <li><a href="calendar.html">calendar</a></li>                
+                <li><a href="index.html">my tasks</a></li>          
                 <li id="loginlink"><a href="#home">settings</a></li>
                 <li id="loginlink"><a href="useracc.html">profile</a></li>
             </ul>
-
+    </header>
     <main>
-        <section id="home">
-            <h2>Welcome to the Task Management Website</h2>
-            <p>Control-Alt-Task, the Go-To Software Engineering Task organization and Management website.</p>
-        </section>
+            <div class="leftColumnHome">
+                
+                    <div class="newProjForm">
+                        <h3 id="projectFormTitle">Create a New Project</h3>
+                        <form action="action_page.php">
+                            <label for="projectTitle">Project Title</label>
+                            <input type="text" id="projectTitle" name="projectTitle" placeholder="Add the projects title...">
+            
+                            <label for="projOwner">owner</label>
+                            <input type="text" id="projOwner" name="projOwner" placeholder="Who owns this project?">
+            
+                            <label for="projDeets"> Project Details </label>
+                            <textarea id="projDeets" name="projDeets" placeholder="Add project details..." style="height: 200px;"></textarea>
+            
+                            <button class="button">next</button>
+            
+                            
+                        
+                        </form>
+                    
+                </div>
+            </div>
+            <div class="rightColumnHome">
+                <div class="newTaskForm ">
+                    <h3 id="projectFormTitle">Create a New Task</h3>
+                    <form action="action_page.php">
+                        <label for="taskTitle">Task Title</label>
+                        <input type="text" id="taskTitle" name="taskTitle" placeholder="Add the task title...">
+                    </form>
+                 </div>
+            </div>
+        
+        
     </main>
 
     <footer>

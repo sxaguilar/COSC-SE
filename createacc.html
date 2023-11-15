@@ -2,51 +2,58 @@
 <html>
     <head>
         <title>create account</title>
-        <link rel="stylesheet" type="text/css" href="createacc.css">
+        <link rel="stylesheet" type="text/css" href="app.css">
         <link rel="shortcut icon" href="projectimages/Bimetrical_icon_clipboard_black.svg" type="image/icon"/>
+        <script src="http://www.gstatic.com/firebasejs/ui/6.01/firebase-ui-auth.js"></script>
+        <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css"/>
 
     </head>
     <body>
-        <div class="header">
+        <header>   
             <img src="projectimages/Screenshot 2023-10-26 182953.png" crossorigin="anonymous" class="logo">
-            <span id="title"><h1>Ctrl-Alt-Task</h1> </span>
-    
-            </div>
-        <ul>
+            <h1 id="title">Ctrl-Alt-Task</h1> 
+        <ul class="headerlinks">
             <li><a href="home.html">home</a></li>
             <li><a href="projects.html">projects</a></li>
             <li id="loginlink"><a href="loginpt2.html">log in</a></li>
-            <li><a href="index.html">my tasks</a></li>
-            <li><a href="calendar.html">calendar</a></li>            
+            <li><a href="index.html">my tasks</a></li>          
             <li id="loginlink"><a href="#home">settings</a></li>
             <li id="loginlink"><a href="useracc.html">profile</a></li>
         </ul>
-        
+        </header>
         
         <div class="image">
-        <div class="account"> 
-            <form action="/action_page.php" method="post" class="form">
-                <h1> register</h1>
+        
+            <form action="/action_page.php" method="post" class="registerForm">
+                <h1 id="registerTitle"> register</h1>
                 <h4> create your free account</h4>
-                    <label for="email"><b>email</b></label>
-                    <input type="email" placeholder="enter email" name="email" required>
-
-                    <label for="password"><b>password</b></label>
-                    <input type="password" placeholder="enter password" name="psw" required>
-
                     <label for="name"> <b>name</b></label>
                     <input type="text" placeholder="enter first name" name="name" required>
 
                     <label for="name"><b>last name</b></label>
                     <input type="text" placeholder="enter last name" name=";name" required>
 
+                    <input max="99" min="1" name="age" step="1" type="number" value="18"/><br />
+
+                    <input name="gender" type="radio" value="male">male
+                    <input checked="checked" name="gender" type="radio" value="female">female
+                    <p></p>
+                    <label for="email"><b>email</b></label>
+                    <input type="email" placeholder="enter email" name="email" required>
+
+                    <label for="password"><b>password</b></label>
+                    <input type="password" placeholder="enter password" name="psw" required>
+
+                    
                     <input type="checkbox" checked name="Subscribe"><a href="termsandconditions.txt">terms and conditions</a></input>
-                
+                <p></p>
                     <button type="button" class="button"><a href="home.html">register</a></button>
         
             </form>
         </div>
-        </div>
+        <footer>
+            &copy; 2023 Control-Alt-Task
+        </footer>
     </body>
 
 </html>

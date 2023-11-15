@@ -1,76 +1,271 @@
-/* Reset some default browser styles */
-body, h1, h2, p, ul {
-    margin: 1;
-    padding: 0;
-}
 
-body {
-    background-image: url('projectimages/pexels-miguel-á-padriñán-19670.jpg'); /* Replace 'your-image.jpg' with the actual image file name and path */
-    background-size: cover; /* Adjusts the image size to cover the entire viewport */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+body, html{
+    height: 100%;
+    background-color: #E8E8E8;
+    font-family: Arial;
+    padding: 10px;
+    
+}
+*{
+    box-sizing: border-box;
 }
 
 header {
-    background-color: #5be6eb;
-    color: #200b1a;
+    padding: 2px;
+    background-color: #D9D9D9;
+    margin-top: 0;
+}
+.logo {
+    height: 40px;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+#title {
     text-align: center;
-    padding: 20px;
+    padding-top: 0%;
+    margin-top: 0%;
+    margin-bottom: 4px;
+    font-size:large;
 }
 
-header h1 {
-    font-size: 24px;
-}
-
-header a {
-    color: #d8d0d0;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 16px;
-}
-
-main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #c6e6f8;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-section {
-    margin: 20px 0;
-}
-
-section h2 {
-    font-size: 20px;
-}
-
-footer {
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     background-color: #333;
-    color: #666161;
-    text-align: center;
-    padding: 10px;
 }
-.horizontal-menu {
+li {
+    float: left;
+
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    opacity: 0.5;
+}
+li a:hover {
+    background-color: #D9D9D9;
+    color: black;
+}
+.active {
+    background-color: #111;
+}
+
+.registerForm{
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-left: 65%;
+    max-width: 400px;;
+    padding: 40px;
+    background-color: white;
+}
+#registerTitle {
+    margin: 10px;
+    text-align: center;
+}
+input[type=text], input[type=password]{
+    width: 100%;
+    padding: 20px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus{
+    background-color: #ddd;
+    outline: none;
+}
+input[type=email], input[type=email]{
+    width: 100%;
+    padding: 20px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+input[type=number], input[type=number]{
+    width: 100%;
+    padding: 20px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+input[type=radio], input[type=radio]{
+   
+    width: 20%;
+    padding: 20px;
+    margin: 5px 0 22px 0;
+    border: none;
+    
+    
+   
+    
+}
+
+.button{
+    background-color: #77c071;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.5;
+    text-decoration: none !important;
+}
+.button:hover{
+    opacity: 1;
+}
+#loginlink {
+    float: right;
+}
+/*log in specifics */
+#line{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin: 20px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.login{ 
+    float: right;
+    position: absolute;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0);
+    border-style: groove;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    
+    width: 30%;
+    height: 520px;
+    margin: 20px;
+    margin-top: 40px;
+}
+.logInForm{
+    position: center;
+    left: 20px;
+    margin: 0px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+    text-decoration: none !important
+}
+/*project specifics*/
+
+.task-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.task-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.completed {
+    background-color: #e0e0e0;
+}
+
+
+/* Task list styling (customize as needed) */
+ul.task-list {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
-.horizontal-menu li {
-    display: inline; /* Make list items display horizontally */
-    margin-right: 20px; /* Add spacing between the items */
+li.task {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-.horizontal-menu li:last-child {
-    margin-right: 0; /* Remove the margin from the last item */
-}
-.horizontal-menu a {
-    color: #06216b79; /* Change link text color to orange (#FF5733) */
-    font-family: "Arial", sans-serif; /* Change font family to Arial or a preferred font */
-    text-decoration: none; /* Remove underline from links */
+/* Messaging interface styling (customize as needed) */
+ul.messages {
+    list-style: none;
+    padding: 0;
 }
 
-.horizontal-menu a:hover {
-    color: #5b0c888f; /* Change link color on hover */
+li.message {
+    background-color: #d6e0f0;
+    border: 1px solid #8aade0;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*home doc details*/
+.leftColumnHome{
+    float: left;
+    width: 75%;
+}
+.rightColumnHome{
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+/*add card effect for articles*/
+.cardHome{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.home {
+    background-color: #666161;
+}
+.newProjForm{
+    float: left;
+    width: 35%;
+    
+    padding: 5%;
+    border-radius: 5px;
+    margin: 20px;
+    
+}
+
+
+#projectFormTitle{
+   margin: 0;
+}
+
+#projDeets {
+    width:100%;
+    background-color: #f1f1f1;
+}
+
+
+
+/*footer*/
+footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #333;
+    color: #666161;
+    float: none;
+
+}
+/*responsive layout*/
+@media screen and (max-width: 800px) {
+    .leftColumnHome,.rightColumnHome {
+        width: 100%;
+        padding: 0;
+    }
+}
+@media  screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
 }
