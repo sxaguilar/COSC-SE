@@ -7,13 +7,13 @@ body {
     background: #f1f1f1;
 }
 /*Header/Blog Title */
-.header {
+header {
     padding: 30px;
     text-align: center;
     background: white;
 }
 
-.header h1 {
+header h1 {
     font-size: 50px;
 }
 /*Style top nav bar*/
@@ -65,7 +65,7 @@ body {
     display: table;
     clear: both;
 }
-.footer {
+footer {
     padding: 20px;
     text-align: center;
     background: #ddd;
