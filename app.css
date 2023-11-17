@@ -346,3 +346,29 @@ footer {
     width: 100%;
     margin-bottom: 5px;
 }
+/*Settings page */
+.containerSettings {
+    width: 300px;
+    float: left;
+    background-color: #666161;
+    margin: 10px;
+    border-radius: 10px;
+    height: 500px;
+}
+.tabShow h2 {
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.tabShow input{
+    border-radius: 5px;
+    margin: 10px;
+    width: 250px;
+    margin-top: 5px;
+}
+.tabShow h1 {
+    text-align: center;
+}
+#subButton {
+    margin-top: 10px;
+}
