@@ -5,31 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Management</title>
     <link rel="stylesheet" type="text/css" href="app.css">
-    <link rel="shortcut icon" href="projectimages/Bimetrical_icon_clipboard_black.svg" type="image/icon"/>
+    <img src="projectimages/Screenshot (17).png" crossorigin="anonymous" class="logo">
 
 </head>
 <body>
-    <header>
+    <header>   
+        <div id="logo">
         <img src="projectimages/Screenshot 2023-10-26 182953.png" crossorigin="anonymous" class="logo">
-        <span id="title"><h1>Ctrl-Alt-Task</h1> </span>
-
         </div>
-            <ul>
-                <li><a href="home.html">home</a></li>
-                <li><a href="projects.html">projects</a></li>
-                <li id="loginlink"><a href="loginpt2.html">log in</a></li>
-                <li><a class="active" href="index.html">my tasks</a></li>        
-                <li id="loginlink"><a href="settings.html">settings</a></li>
-                <li id="loginlink"><a href="useracc.html">profile</a></li>
-            </ul>
+        <h1 id="title">Ctrl-Alt-Task</h1> 
+        <div id="mySidePanel" class="sidePanel"> 
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="home.html">home</a>
+            <a href="projects.html">my projects</a>
+            <a href="index.html">my tasks</a>
+            <a href="useracc.html">profile</a>
+            <a href="loginpt2.html">log in</a>
+        </div>
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
     </header>
     <main>
         <!-- Task management section -->
         <section id="tasks">
             <h2>Your Tasks</h2>
-            <ul class="task-list">
-                <!-- Task list items will be added here dynamically -->
-            </ul>
+            
             <form id="task-form">
                 <input type="text" id="task-input" placeholder="Add a new task">
                 
@@ -42,7 +41,9 @@
                 <button type="submit">Add Task</button>
             </form>
         </section>
-
+        <ul class="task-list">
+            <!-- Task list items will be added here dynamically -->
+        </ul>
         <!-- Communication section -->
 
         <section id="messages">
@@ -55,10 +56,11 @@
            
            
             
-            <ul class="messages">
-                <!-- Message list items will be added here dynamically -->
-            </ul> 
+            
         </form>
+        <ul class="messages">
+                <!-- Message list items will be added here dynamically -->
+        </ul> 
         </section>
     </main>
 
@@ -66,7 +68,7 @@
         &copy; 2023 Control-Alt-Task
     </footer>
 
-    <script>
+    <script src="app.js">
         // JavaScript code for task and message handling will go here
         document.addEventListener("DOMContentLoaded", function() {
             const taskForm = document.getElementById("task-form");

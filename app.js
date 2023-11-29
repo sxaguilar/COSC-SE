@@ -144,5 +144,50 @@ function createTask() {
                   length.classList.add("invalid");
               }
             }
-
-  
+            //open and close the navigation side panel 
+            function openNav() {
+                document.getElementById("mySidePanel").style.width = "250px";
+            }
+            function closeNav() {
+                document.getElementById("mySidePanel").style.width = "0px" ;
+            }
+//google button 
+//get profile info
+function onSignIn(googleUser) {
+    var profile = googleUser.getBasicProfile();
+    console.log('ID: ' + profile.getId());
+    console.log('Name: ' + profile.getName());
+    console.log('Image URL: ' + profile.getImageUrl());
+    console.log('Email: ' + profile.getEmail());
+}
+//sign out
+function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function(){
+        console.log('User signed out.');
+    });
+}
+//log in 
+function onSuccess(googleUser) {
+    console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+}
+function onFailure(error){
+    console.log(error);
+}
+function renderButton() {
+    gapi.signin2.render('my-signin2', {
+        'scope' : 'profile email',
+        'width' : 240,
+        'height' : 50,
+        'longtitle' : true,
+        'theme' : 'dark',
+        'onsuccess' : onSuccess,
+        'onfailure' : onFailure
+    });
+}
+document.addEventListener("DOMContentLoaded", function () {
+    // Add the 'fade-out' class after a delay (e.g., 3 seconds)
+    setTimeout(function () {
+        document.getElementById("overlay").classList.add("fade-out");
+    }, .3); // Adjust the delay as needed
+});

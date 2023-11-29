@@ -10,21 +10,24 @@
     </head>
     <body>
         <header>   
-            <img src="projectimages/Screenshot 2023-10-26 182953.png" crossorigin="anonymous" class="logo">
+            <div id="logo">
+            <img src="projectimages/Screenshot (17).png" crossorigin="anonymous" class="logo">
+            </div>
             <h1 id="title">Ctrl-Alt-Task</h1> 
-        <ul class="headerlinks">
-            <li><a href="home.html">home</a></li>
-            <li><a href="projects.html">projects</a></li>
-            <li id="loginlink"><a href="loginpt2.html">log in</a></li>
-            <li><a href="index.html">my tasks</a></li>          
-            <li id="loginlink"><a href="settings.html">settings</a></li>
-            <li id="loginlink"><a href="useracc.html">profile</a></li>
-        </ul>
+            <div id="mySidePanel" class="sidePanel"> 
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="home.html">home</a>
+                <a href="projects.html">my projects</a>
+                <a href="index.html">my tasks</a>
+                <a href="useracc.html">profile</a>
+                <a href="loginpt2.html">log in</a>
+            </div>
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
         </header>
         
-        <div class="image">
+        <div class="centerAlign">
         
-            <form action="/action_page.php" method="post" class="registerForm">
+            <form action="/action_page.php" method="post" >
                 <h1 id="registerTitle"> register</h1>
                 <h4> create your free account</h4>
                     <label for="name"> <b>name</b></label>
