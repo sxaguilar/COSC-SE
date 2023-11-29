@@ -1,19 +1,20 @@
 
 body{
     height:1000px;
-    background: #f7ebd7;
+    background:  #363941;
     font-family: Arial;
     padding: 0px;
     min-height: 100%;
     margin: 0;
 }
+
 *{
     box-sizing: border-box;
 }
 
 header {
     padding: 0px;
-    background-color: #B2AC88;
+    background-color:#1e1f23;
     margin: 0;
 }
 #logo {
@@ -32,16 +33,27 @@ header {
     margin: 0%;
     font-size: 50px;
     width: max-content;
+    color: #c5cacd;
    
+}
+.registerBox {
+    width: 375px;
+    background-color: #474a52;
+    border-radius: 20px;
+    margin-left: 35%;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 .centerAlign{
-    
-     margin-left: 30%;
-     margin-right: 30%;
-     background-color: #f1f1f1;
+    color: #c5cacd;
+     padding: 10px;
+     background-color: #474a52;
      border-radius: 20px;
     
+}
+.centerAlign a {
+    color: #c5cacd;
 }
 #registerTitle {
     margin-top: 20px;
@@ -63,8 +75,9 @@ input[type=text], input[type=password]{
     padding: 20px;
     margin: 5px 0 22px 0;
     border: none;
-    background: #fff;
+    background: #c5cacd;
 }
+
 input[type=text]:focus, input[type=password]:focus{
     background-color: #fff;
     outline: none;
@@ -74,14 +87,14 @@ input[type=email], input[type=email]{
     padding: 20px;
     margin: 5px 0 22px 0;
     border: none;
-    background: #fff;
+    background: #c5cacd;
 }
 input[type=number], input[type=number]{
     width: 100%;
     padding: 20px;
     margin: 5px 0 22px 0;
     border: none;
-    background: #fff;
+    background: #c5cacd;
 }
 input[type=radio], input[type=radio]{
    
@@ -111,6 +124,7 @@ input[type=radio], input[type=radio]{
 #loginlink {
     float: right;
 }
+
 /*log in specifics */
 .login h1, h4 {
     text-align: center;
@@ -118,7 +132,7 @@ input[type=radio], input[type=radio]{
 #line{
     width: 100%;
     height: 2px;
-    background-color: black;
+    background-color: #c5cacd;
     margin: 20px;
     margin-left: 0;
     margin-right: 0;
@@ -145,7 +159,7 @@ input[type=radio], input[type=radio]{
     display: contents;
 }
 .valid {
-    color: green;
+    color: #77c071;
 }
 .valid:before{
     position: relative;
@@ -153,7 +167,7 @@ input[type=radio], input[type=radio]{
     content: '\2611';
 }
 .invalid {
-    color: red;
+    color: rgb(179, 101, 101);
 }
 .invalid:before{
     position: relative;
@@ -161,7 +175,7 @@ input[type=radio], input[type=radio]{
     content: '\2612';
 }
 .messageBox {
-    background-color: #f1f1f1;
+    background-color: #474a52;
     width: 300px;
     float: right;
     margin-top: 5px;
@@ -169,7 +183,12 @@ input[type=radio], input[type=radio]{
     margin-bottom: 15px;
     border-radius: 10px;
     text-align: center;
+   
     
+}
+.messageBox h4 {
+    color: #c5cacd;
+
 }
 /*project specifics*/
 
@@ -207,6 +226,12 @@ input[type=radio], input[type=radio]{
     width: 275px;
     margin-left: 12px;
 }
+#task-form1 {
+    width: 275px;
+    margin-left: 12px;
+    
+}
+
 #message-form {
     width: 275px;
     margin-left: 12px;
@@ -248,8 +273,23 @@ li.message {
     padding: 10px;
     border-radius: 5px;
 }
-
-/*home doc details*/
+/*edit for index cards*/
+.leftColumnI {
+    float: left;
+    width: 330px;
+    margin-left: 30px;
+    
+}
+.rightColumnI {
+    float: left;
+    margin-left: 20px;
+    width: 330px;
+    padding-right: 5px;
+}
+.rightColumnI h1, h2 {
+    text-align: center;
+    opacity: .7;
+}
 /*Create two unequal columns that float next to each other*/
 /*Left column*/
 .leftColumn {
@@ -261,15 +301,23 @@ li.message {
 .rightColumn {
     float: right;
     width: 30%;
-    padding-right: 5px;
+    padding-right: 20px;
 }
 /*add card effect for articles*/
 .card {
-    background: #f1f1f1;;
+    background: #474a52;
     padding: 20px;
     margin-top: 20px;
     border-radius: 20px;
+    color: #c5cacd;
     
+}
+.card a {
+    color: #77c071;
+    opacity: 0.75;
+}
+.card a:hover {
+    opacity: 1;
 }
 
 
@@ -281,7 +329,7 @@ li.message {
 .newProjForm{
     float: left;
     width: 35%;
-    
+    color: #c5cacd;
     padding: 5%;
     border-radius: 5px;
     margin: 20px;
@@ -305,8 +353,8 @@ li.message {
 footer {
     margin-top: 1000px;
     padding: 20px;
-    background-color: #a2a182;
-    color: #666161;
+    background-color: #1e1f23;
+    color: #c5cacd;
     text-align: center;
 }
 /*responsive layout*/
@@ -364,7 +412,7 @@ footer {
     z-index: 1;
     top: 20px;
     left: 0;
-    background-color: #687259;
+    background-color: #2f3137;
     overflow-x: hidden;
     padding-top: 40px;
     transition: 0.5s;
@@ -391,7 +439,7 @@ footer {
 .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: #687259;
+    background-color: #2f3137;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -408,3 +456,69 @@ footer {
     margin-top: 5%;
     margin-left: 35%;
 }
+/*pop up */
+.button{
+    background-color: #77c071;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.5;
+    text-decoration: none !important;
+}
+.button:hover{
+    opacity: 1;
+}
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    background-color: #77c071;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.5;
+    text-decoration: none !important;
+  }
+  .popup:hover {
+    opacity: 1;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+

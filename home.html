@@ -12,17 +12,16 @@
     
     <header>   
         <div id="logo">
-            <img src="projectimages/Screenshot (17).png" crossorigin="anonymous" class="logo">
+          <img src="projectimages/Screenshot 2023-11-29 045225.png" crossorigin="anonymous" class="logo">
         </div>
         <h1 id="title">Ctrl-Alt-Task</h1> 
         <div id="mySidePanel" class="sidePanel"> 
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="home.html">home</a>
-            <a href="projects.html">my projects</a>
-            <a href="index.html">my tasks</a>
+            <a href="home.html">log in</a>
+            <a href="projectne.html">my projects</a>
+            <a href="index.html">create</a>
             <a href="useracc.html">profile</a>
-            <a href="loginpt2.html">log in</a>
-            <a href="tester.html">tester</a>
+            
         </div>
         <button class="openbtn" onclick="openNav()">&#9776;</button>
     </header>
@@ -61,10 +60,10 @@
                             <form action="/action_page.php"class="logInForm">
                                 <h1>log in</h1>
                                 <label for="email"><b>email</b></label>
-                                <input type="email" placeholder="enter email" name="email" required>
+                                <input type="email" placeholder="enter email" name="email" required >
                 
                                 <label for="password"><b>password</b></label>
-                                <input id="psw" type="password" placeholder="enter password" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                                <input id="psw" type="password" placeholder="enter password" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required >
                 
                                 <div class="messageBox">
                                     <div id="passValidMessage">
@@ -76,15 +75,17 @@
                                     </div>
                                 </div>
                 
-                                <button onclick="document.location = 'projects.html'" class="button">log in</button>
+                                <button type="submit" formaction="projectne.html" class="button">log in</button>
+</form>
                                 <p id="p"><h4>or</h4></p>
                                 <div id="line">  </div>
-                            
                                 <button onclick="document.location = 'createacc.html'" class="button">register</button>
+                                
+
                 
                                 <div class="g-signin2" data-onsuccess="onSignIn"></div>
                            
-                             </form>
+                             
                         </div>
                 </div>
             </div>

@@ -11,23 +11,22 @@
     <body>
         <header>   
             <div id="logo">
-            <img src="projectimages/Screenshot (17).png" crossorigin="anonymous" class="logo">
+              <img src="projectimages/Screenshot 2023-11-29 045225.png" crossorigin="anonymous" class="logo">
             </div>
             <h1 id="title">Ctrl-Alt-Task</h1> 
             <div id="mySidePanel" class="sidePanel"> 
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="home.html">home</a>
-                <a href="projects.html">my projects</a>
-                <a href="index.html">my tasks</a>
+                <a href="home.html">log in</a>
+                <a href="projectne.html">my projects</a>
+                <a href="index.html">create</a>
                 <a href="useracc.html">profile</a>
-                <a href="loginpt2.html">log in</a>
+                
             </div>
             <button class="openbtn" onclick="openNav()">&#9776;</button>
         </header>
+        <div class="registerBox">
         
-        <div class="centerAlign">
-        
-            <form action="/action_page.php" method="post" >
+            <form action="/action_page.php" method="post" class="centerAlign" >
                 <h1 id="registerTitle"> register</h1>
                 <h4> create your free account</h4>
                     <label for="name"> <b>name</b></label>
@@ -59,13 +58,13 @@
                                 </div>
                             </div>
                     
-                    <input type="checkbox" checked name="Subscribe"><a href="termsandconditions.txt">terms and conditions</a></input>
+                    <input type="checkbox" checked name="Subscribe" id="termsAndConditions"><a href="termsandconditions.txt">terms and conditions</a></input>
                 <p></p>
-                    <button type="button" class="button"><a href="home.html">register</a></button>
+                    <button type="button" class="button">register</button>
         
             </form>
-        </div>
         
+    </div>
         <footer>
             &copy; 2023 Control-Alt-Task
         </footer>

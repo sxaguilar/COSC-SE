@@ -5,70 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Management</title>
     <link rel="stylesheet" type="text/css" href="app.css">
-    <img src="projectimages/Screenshot (17).png" crossorigin="anonymous" class="logo">
+    
+    <link rel="shortcut icon" href="projectimages/Bimetrical_icon_clipboard_black.svg" type="image/icon"/>
 
 </head>
 <body>
     <header>   
         <div id="logo">
-        <img src="projectimages/Screenshot 2023-10-26 182953.png" crossorigin="anonymous" class="logo">
+          <img src="projectimages/Screenshot 2023-11-29 045225.png" crossorigin="anonymous" class="logo">
         </div>
         <h1 id="title">Ctrl-Alt-Task</h1> 
         <div id="mySidePanel" class="sidePanel"> 
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="home.html">home</a>
-            <a href="projects.html">my projects</a>
-            <a href="index.html">my tasks</a>
+            <a href="home.html">log in</a>
+            <a href="projectne.html">my projects</a>
+            <a href="index.html">create</a>
             <a href="useracc.html">profile</a>
-            <a href="loginpt2.html">log in</a>
+            
         </div>
         <button class="openbtn" onclick="openNav()">&#9776;</button>
     </header>
     <main>
-        <!-- Task management section -->
-        <section id="tasks">
-            <h2>Your Tasks</h2>
-            
-            <form id="task-form">
-                <input type="text" id="task-input" placeholder="Add a new task">
+        <div class="row">
+            <div class="leftColumnI">
+                <section class="card">
+                <h2>New Project</h2>
                 
-                <input type="text" id="taskOwner" placeholder="Owner:" >
+                <form id="task-form">
+                    <input type="text" id="task-input" placeholder="Add a project title">
+                    
+                    <input type="text" id="taskOwner" placeholder="Owner:" >
+                    
+                    <input type="text" id="taskReciever" placeholder="Reciever:" >
+                    
+                    
+                    <textarea id="projDeets" name="taskDeets" placeholder="Add project details..." style="height: 200px;"></textarea>
+                    
+                    <button class="button" formaction="projecttsne.html"><a href="projecttsne.html">Add Project</a></button>
+                    
+                </form>
                 
-                <input type="text" id="taskReciever" placeholder="Reciever:" >
-                
-                
-                <textarea id="projDeets" name="taskDeets" placeholder="Add task details..." style="height: 200px;"></textarea>
-                <button type="submit">Add Task</button>
-            </form>
-        </section>
-        <ul class="task-list">
-            <!-- Task list items will be added here dynamically -->
-        </ul>
-        <!-- Communication section -->
-
-        <section id="messages">
-        <h2> messages</h2>
-              <form id="message-form">
-                <input type="text" id="message-reciver" placeholder="send to:" >
-                <textarea id="projDeets" name="messageBox" placeholder="Type a message..." style="height: 200px;"></textarea>
-                
-                <button type="submit">Send</button>
-           
-           
-            
-            
-        </form>
-        <ul class="messages">
-                <!-- Message list items will be added here dynamically -->
-        </ul> 
-        </section>
+                </section>
+            </div>
+          
+        </div>
+        
+       
     </main>
 
     <footer>
         &copy; 2023 Control-Alt-Task
     </footer>
-
+    <script>
+        // When the user clicks on <div>, open the popup
+        function myFunction() {
+          var popup = document.getElementById("myPopup");
+          popup.classList.toggle("show");
+        }
+        </script>
     <script src="app.js">
+    function openPopup() {
+    document.getElementById('popup').style.display = 'block';
+    document.getElementById('overlay').style.display = 'block';
+}
+
+function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+    document.getElementById('overlay').style.display = 'none';
+}
         // JavaScript code for task and message handling will go here
         document.addEventListener("DOMContentLoaded", function() {
             const taskForm = document.getElementById("task-form");

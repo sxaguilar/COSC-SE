@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Task Management</title>
+    <link rel="stylesheet" type="text/css" href="app.css">
+    
+    <link rel="shortcut icon" href="projectimages/Bimetrical_icon_clipboard_black.svg" type="image/icon"/>
+</head>
+<body>
+    <header>   
+        <div id="logo">
+        <img src="projectimages/Screenshot 2023-11-29 045225.png" crossorigin="anonymous" class="logo">
+        </div>
+        <h1 id="title">Ctrl-Alt-Task</h1> 
+        <div id="mySidePanel" class="sidePanel"> 
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="home.html">log in</a>
+            <a href="projectne.html">my projects</a>
+            <a href="index.html">create</a>
+            <a href="useracc.html">profile</a>
+        </div>
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+    </header>
+    <div class="row">
+        <div class="leftColumnI">
+            <section class="card">
+            <h2>project one</h2>
+            
+            <form id="task-form2">
+                
+                <input type="text" id="taskOwner" placeholder="ctrlalttask@gmail.com" >
+                
+                <input type="text" id="taskReciever" placeholder="other@gmail.com" >
+                
+                
+                <textarea id="projDeets" name="taskDeets" placeholder="task comment" style="height: 200px;"></textarea>
+                </form>
+
+                <button onclick="document.location = 'projectne.html'" class="button">delete task</button>
+            
+            </section>
+        </div>
+        
+    </div>
+    <footer>
+        &copy; 2023 Control-Alt-Task
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
