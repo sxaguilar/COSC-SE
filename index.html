@@ -18,10 +18,9 @@
         <div id="mySidePanel" class="sidePanel"> 
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="home.html">log in</a>
-            <a href="projectne.html">my projects</a>
-            <a href="index.html">create</a>
+            <a href="index.html">my projects</a>
             <a href="useracc.html">profile</a>
-            
+            <a href="test.html">test</a>
         </div>
         <button class="openbtn" onclick="openNav()">&#9776;</button>
     </header>
@@ -32,22 +31,26 @@
                 <h2>New Project</h2>
                 
                 <form id="task-form">
-                    <input type="text" id="task-input" placeholder="Add a project title">
+                    <input type="text" id="task-input" placeholder="Add a project title" required>
                     
-                    <input type="text" id="taskOwner" placeholder="Owner:" >
+                    <input type="text" id="taskOwner" placeholder="Owner:" required>
                     
-                    <input type="text" id="taskReciever" placeholder="Reciever:" >
+                    <input type="text" id="taskReciever" placeholder="Reciever:" required>
                     
                     
-                    <textarea id="projDeets" name="taskDeets" placeholder="Add project details..." style="height: 200px;"></textarea>
+                    <input type="text" id="projDeets" name="projDeets" placeholder="Add project details..." required>
                     
-                    <button class="button" formaction="projecttsne.html"><a href="projecttsne.html">Add Project</a></button>
+                    <button class="button" id="submitButton" type="button">Add Project</button>
                     
                 </form>
-                
+            </div>    
+            <div class="rightColumnI">
                 </section>
-            </div>
-          
+                <section class="card">
+                    <div id="displayResult"></div>
+                </section>
+            
+          </div>
         </div>
         
        
@@ -56,56 +59,7 @@
     <footer>
         &copy; 2023 Control-Alt-Task
     </footer>
-    <script>
-        // When the user clicks on <div>, open the popup
-        function myFunction() {
-          var popup = document.getElementById("myPopup");
-          popup.classList.toggle("show");
-        }
-        </script>
-    <script src="app.js">
-    function openPopup() {
-    document.getElementById('popup').style.display = 'block';
-    document.getElementById('overlay').style.display = 'block';
-}
-
-function closePopup() {
-    document.getElementById('popup').style.display = 'none';
-    document.getElementById('overlay').style.display = 'none';
-}
-        // JavaScript code for task and message handling will go here
-        document.addEventListener("DOMContentLoaded", function() {
-            const taskForm = document.getElementById("task-form");
-            const taskInput = document.getElementById("task-input");
-            const taskList = document.querySelector(".task-list");
-            const messageForm = document.getElementById("message-form");
-            const messageInput = document.getElementById("message-input");
-            const messageList = document.querySelector(".messages");
-
-            // Handle task submission
-            taskForm.addEventListener("submit", function(event) {
-                event.preventDefault();
-                const taskText = taskInput.value;
-                if (taskText.trim() !== "") {
-                    const taskItem = document.createElement("li");
-                    taskItem.textContent = taskText;
-                    taskList.appendChild(taskItem);
-                    taskInput.value = "";
-                }
-            });
-
-            // Handle message submission
-            messageForm.addEventListener("submit", function(event) {
-                event.preventDefault();
-                const messageText = messageInput.value;
-                if (messageText.trim() !== "") {
-                    const messageItem = document.createElement("li");
-                    messageItem.textContent = messageText;
-                    messageList.appendChild(messageItem);
-                    messageInput.value = "";
-                }
-            });
-        });
-    </script>
+    <script src="test.js"></script>
+    
 </body>
 </html>
